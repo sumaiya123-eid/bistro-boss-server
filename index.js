@@ -23,7 +23,7 @@ async function run() {
   try {
     // Connect the client to the server	(optional starting in v4.7)
     const menuCollection = client.db("menuDb").collection("menu");
-    const reviewCollection = client.db("reviewDb").collection("review");
+    const reviewCollection = client.db("menuDb").collection("review");
 
     await client.connect();
     
